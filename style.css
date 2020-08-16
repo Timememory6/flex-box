@@ -1,0 +1,204 @@
+/* CSSのリセット（消さないでください） */
+html, body,
+div,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flexbox{
+  float: left;
+  height: 25vh;
+  width: 25vw;
+  border: 2px double yellow;
+  display: flex;
+}
+
+.flexitem{
+  display   : inline-block;
+  vertical-align:top;
+  height: 25%;
+  width: 25%;
+  border: 1px solid black;
+}
+
+.flexitem p{
+ font-size: 5vw;
+ color: white;
+}
+
+.red{
+  background-color: red;
+}
+
+.green{
+  background-color: green;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.black{
+  background-color: black;
+}
+
+.clear{
+  clear: both;
+}
+
+/* ここからCSSを書いていきましょう */
+.flex-direction .box1{
+  flex-direction: row;
+  float: left;
+}
+
+.flex-direction .box2{
+  flex-direction: column;
+}
+
+.flex-direction .box3{
+  flex-direction: row-reverse;
+}
+
+.flex-direction .box2{
+  flex-direction: column-reverse;
+}
+
+.flex-direction .box1{
+  flex-direction: row;
+  float: left;
+}
+
+.flex-wrap .flexitem{
+  width: 50%;
+  height: 50%;
+}
+
+.flex-wrap .box1{
+  flex-wrap: wrap-reverse;
+}
+
+.flex-wrap .box2{
+  flex-wrap: nowrap;
+}
+
+.flex-wrap .box3{
+  flex-wrap: wrap;
+}
+
+.flex-flow .box1{
+  flex-flow: wrap-reverse;
+}
+
+.flex-flow .box2{
+  flex-flow: row nowrap;
+}
+
+.flex-flow .box3{
+  flex-flow: column wrap;
+}
+
+.justify-content .box1{
+  justify-content: flex-start;
+}
+
+.justify-content .box2{
+  justify-content: flex-end;
+}
+
+.justify-content .box3{
+  justify-content: center;
+}
+
+.align-items .box1{
+  align-items: flex-start;
+}
+
+.align-items .box2{
+  align-items: flex-end;
+}
+
+.align-items .box3{
+  align-items: center;
+}
+
+.align-content .box1{
+  align-content: flex-start;
+}
+
+.align-content .box2{
+  align-content: flex-end;
+}
+
+.align-content .box3{
+  align-content: center;
+}
+
+.order .box1 .item1{
+ order: 0;
+}
+
+.order .box1 .item2{
+  order: 3;
+ }
+
+ .order .box1 .item3{
+  order: 2;
+ }
+
+ .order .box2 .item1{
+  order: 1;
+ }
+ 
+ .order .box2 .item2{
+   order: 5;
+  }
+ 
+  .order .box2 .item3{
+   order: 4;
+  }
+
+.flex-grow .flexbox{
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: stretch;
+}
+
+  .flex-grow .box1 .item1{
+    flex-grow: 1;
+  }
+
+  .flex-grow .box1 .item2{
+    flex-grow: 2;
+  }
+  
+  .flex-grow .box1 .item3{
+    flex-grow: 2;
+  }
+  
+  .flex-grow .box1 .item4{
+    flex-grow: 3;
+  }
+
+  .flex-grow .box3 .item4{
+    flex-grow: 4;
+  }
+
+  .flex-basis .item1{
+    flex-basis : 100px;
+  }
+
+   .flex-basis .item2{
+    flex-basis : 150px;
+  }
+
+ .flex-basis .item3{
+  flex-basis : 200px;
+  }
+
+  .flex-basis .item4{
+    flex-basis : 100px;
+  }
